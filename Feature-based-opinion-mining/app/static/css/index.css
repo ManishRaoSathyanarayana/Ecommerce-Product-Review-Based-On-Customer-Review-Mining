@@ -1,0 +1,8 @@
+.mdl-grid.center-items {
+    margin-top: 32px;
+    justify-content: center;
+}
+
+.mdl-data-table th {
+    font-size: 18px;
+}

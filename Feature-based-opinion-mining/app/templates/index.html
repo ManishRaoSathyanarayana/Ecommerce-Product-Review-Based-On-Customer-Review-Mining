@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+
+{% block content %}
+<div class="mdl-grid center-items">
+    <table class="mdl-cell mdl-cell--4-col dataset-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+        <!-- <thead>
+            <tr style="text-align: center">
+              <th class="full-width" colspan="2">Reviews Datasets</th>
+            </tr>
+        </thead> -->
+        <tbody>
+            {% for dataset in datasets %}
+            <tr>
+                <td>{{ dataset }}</td>
+                <td></td>
+                <td class="mdl-data-table__cell--non-numeric">
+                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+                        href="{{ dataset }}/result">
+                        RUN
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

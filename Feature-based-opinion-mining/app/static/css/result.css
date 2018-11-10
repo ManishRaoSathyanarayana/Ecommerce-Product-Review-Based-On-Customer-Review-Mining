@@ -1,0 +1,21 @@
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.mdl-data-table tr {
+    white-space: normal;
+    word-wrap: break-word;
+}
+.mdl-data-table td {
+    /* background-color: green; */
+
+}
+
+.mdl-grid.center-items {
+    margin-top: 32px;
+    justify-content: center;
+}

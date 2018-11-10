@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feature based Opinion Mining</title>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='mdl/material.min.css') }}">
+        {% block styles %}{% endblock %}
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header mdl-layout--fixed-tabs">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">Feature based Opinion Mining
+                    {% block titlebar %}{% endblock %}
+                    </span>
+                </div>
+                {% block tabs %}{% endblock %}
+            </header>
+            <main class="mdl-layout__content">
+                    {% block content %}{% endblock %}
+            </main>
+        </div>
+        <script src="{{ url_for('static', filename='mdl/material.min.js') }}"></script>
+    </body>
+</html>
